@@ -1,0 +1,351 @@
+ /*bài làm có tham khảo cách sắp xếp cố cục từ kênh youtobe f8 và một số mentor thêm bớt màu sắc box-showdo để thử nghiệm cũng như học cho quen tay nếu 
+  mentor thấy không phù hợp em có thể sửa lại . cảm ơn các mentor . chúc ngày mới vui vẻ */
+
+
+* {
+    margin: 0px;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+    /* box-shadow: 1px 2px 3px 4px var(--boder-color); */
+}
+:root {
+    --boder-color:  /*#d0d0d0; */ /* tomato*/  #d6c08d; /*cái này em học thêm và tham khảo từ trang youtobe f8 */
+    --icon-color: #199cdb;
+}
+section > .container{
+    width: 1170px;
+    margin: auto;
+    display: block;
+    padding: 30px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* set phan mo dau banner */
+#banner { 
+    /* cai dat  anh cho banner */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.580),rgba(0, 0, 0, 0.600)), url(../images/banner.jpg);
+    background-size: cover;
+    height: 600px;
+}
+#banner .name {
+    padding-top: 200px;
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 30px;
+}
+#banner .name .name-title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#nav-bar .container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--boder-color);
+    width: 100%;   
+}
+#nav-bar .container a {
+    text-decoration: none;
+    color: black;
+    padding: 30px 10px;
+    border-left: 1px solid var(--boder-color);
+}
+.nav-name {
+    position: relative;
+    min-width: 200px;
+    border-radius: 50%;
+}
+.avatar img {
+    border-radius: 50%;
+    border: 10px solid /*white*/ /*var(--boder-color)*/ orange;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+.avatar{
+    position: absolute;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+}
+#nav-bar .container i {
+    color: var(--icon-color);
+}
+#nav-bar .container a:nth-child(2)
+{
+    border-right: 1px solid var(--boder-color);
+}
+#nav-bar .container a:nth-child(5)
+{
+    border-right: 1px solid var(--boder-color);
+}
+
+#about .bg-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px; 
+}
+.container .bg-content h1 {
+    padding: 40px 0px;
+}
+#personal-info ul {
+    list-style: none;
+    padding-left: 0px;
+}
+#personal-info ul li {
+    padding: 5px 0px;
+}
+#personal-info ul span {
+    font-weight: bolder;
+}
+#personal-info ul li i {
+    color: var(--icon-color);
+    font-size: 20px;
+}
+#personal-info ul div {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+
+#job-info .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    
+}
+
+#job-info .container .job-content {
+    border: 1px solid var(--boder-color);
+    box-shadow: 2px 3px 4px 4px var(--boder-color);
+    padding: 20px 5px 30px 35px;
+    min-height: 400px;
+    
+}
+.job-content i {
+    color: var(--icon-color);
+    font-size: 30px;
+}
+
+.job-content .job-hear {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.job-title h3 {
+    position: relative;
+    padding: 10px 0px;
+}
+.job-title h3::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--icon-color);
+    left: -20px;
+    top: 16px;
+    box-shadow: 1px 2px 3px 4px var(--icon-color);
+}
+
+#job-info .job-content .job-time {
+    font-style: italic;
+    padding: 10px 0px;
+}
+#job-info .job-content .job-time span {
+    background-color: var(--icon-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    color: #f7f7f7;
+}
+#job-info .job-content .info-content p {
+    padding: 7px 10px;
+    font-size: 18px;
+}
+/* intesret */
+
+.interet {
+    position: relative;
+}
+
+.job-content .interet  {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 40px;   
+    justify-items: start;
+    align-items: center;
+}
+.job-content .interet p {
+    position: relative;
+    font-size: 20px;
+    border: 1px solid var(--icon-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+}
+
+.job-content .interet i {
+    position: absolute;
+    font-size: 26px;
+    color: black;
+    top: 10px;
+    left: 9px;
+}
+.interet .sing {
+    font-size: 12px;
+    padding-top: 20px;
+}
+ /* langguage */
+
+.job-content .language h4
+{
+    padding: 30px 0px 10px 0px;
+}
+
+.job-content .language span {
+    background: #199cdb;
+    display: inline-block;
+    height: 4px;
+    margin-right: 15px;
+    width: 80px;
+}
+.job-content .language .setspan {
+    background: #8ea5ad;
+    display: inline-block;
+    height: 4px;
+    margin-right: 15px;
+    width: 80px;
+}
+
+/* Chứng chỉ - Giải thưởng*/
+#certificate .container h1 {
+    padding: 30px 0px;
+}
+
+#certificate .container .grey-hear {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+
+}
+#certificate .container .grey-hear .grey-body {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;  
+     box-shadow: 1px 2px 3px 4px var(--boder-color);
+    
+}
+.row {
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    width: 1px;
+    background-color: orange;
+    left: 50%;
+    margin-bottom: 40px;
+}
+.line {
+    grid-column: 1/-1;
+    height: 1px;
+    background-color: orange;
+}
+
+.grey-body .grey-content h4 {
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+.grey-body .grey-content p {
+    font-size: 5px;
+    padding-bottom: 10px;
+}
+
+/* Dự án */
+#project .container h1 {
+    padding: 30px 0;
+}
+#project .container .project-title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+.pro-hear {
+    padding: 20px 10px;
+    border-bottom: 1px solid var(--boder-color);
+    font-size: 10px;
+}
+.pro-content
+{
+    border: 1px solid var(--boder-color);
+    box-shadow: 1px 3px 4px 1px var(--boder-color); /*cài này em thêm vào cho vui mentor không thấy đẹp thì ẩn đi hộ em nhá :))*/
+}
+.pro-img {
+    border-bottom: 1px solid var(--boder-color);
+}
+.pro-timeline {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 20px;
+    /* border-bottom: 1px solid var(--boder-color); */
+}
+.pro-timeline .bg-colortime {
+    background-color: var(--icon-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    color: #f7f7f7;
+}
+.pro-timeline i {
+      padding: 0px 10px;
+      color: var(--icon-color);
+}
+.detail {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+
+}
+.detail p {
+    padding: 15px 10px;
+    font-size: 13px; 
+    border-top: 1px solid var(--boder-color);
+}
+.pro-compendious div::nth-child(3)
+{
+    border-bottom: none;
+}
+
+/* set footer */
+#footer .container .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.footer-content li:hover
+{
+    background-color: orange;
+    cursor: pointer;
+}
+#footer .container .footer-content li {
+    list-style: none;
+}
+#footer .container .footer-content i {
+    color: var(--icon-color);
+    padding-right: 10px;
+}
